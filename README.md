@@ -5,7 +5,7 @@ Linux kernel paired with a statically-linked, musl-based BusyBox userspace,
 booted via initramfs. No distro, no init system beyond BusyBox `ash`, no
 unnecessary drivers.
 
-Why
+# Why
 After going through Linux From Scratch and Beyond Linux From Scratch, I
 wanted to see how far I could strip a system down: no glibc, no package
 manager, no dozens of separately-built userland packages — just a
