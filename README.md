@@ -5,6 +5,14 @@ Linux kernel paired with a statically-linked, musl-based BusyBox userspace,
 booted via initramfs. No distro, no init system beyond BusyBox `ash`, no
 unnecessary drivers.
 
+Why
+After going through Linux From Scratch and Beyond Linux From Scratch, I
+wanted to see how far I could strip a system down: no glibc, no package
+manager, no dozens of separately-built userland packages — just a
+tinyconfig kernel and a single static BusyBox binary. This is the result:
+a system that boots to a shell in well under a second and fits in a few
+megabytes total.
+
 Final boot artifacts are tiny:
 
 - `bzImage` — kernel, built from `tinyconfig` with only what's needed
