@@ -1,0 +1,7 @@
+#!/bin/sh
+mount -t proc none /proc
+mount -t sysfs none /sys
+mount -t devtmpfs none /dev 2>/dev/null
+
+echo "minisis boot ok"
+exec /bin/sh
